@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" translate="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Chis — Aceite CBD Premium para Mascotas</title>
+<meta name="google" content="notranslate">
 <meta name="description" content="Aceite CBD Premium Dr. Chis para mascotas. Full Spectrum, Probado en laboratorio, Sin OMG. Bienestar natural para tu mejor amigo.">
 <meta property="og:title" content="Dr. Chis — Aceite CBD Premium para Mascotas">
 <meta property="og:description" content="Full Spectrum CBD Oil for pets. Probado en Lab, Sin OMG, Made in USA.">
@@ -45,7 +46,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 
 /* HERO */
 #home{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--dark);padding-top:68px;}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0a1a14 0%,#1a3d32 40%,#0d2318 70%,#08120d 100%);}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0a1a14 0%,#1a3d32 40%,#0d2318 70%,#08120d 100%);z-index:1;}
 .hero-mountain{position:absolute;bottom:0;left:0;right:0;opacity:.1;pointer-events:none;}
 .hero-dog{position:absolute;right:0;top:68px;bottom:0;width:58%;object-fit:cover;object-position:center top;opacity:.85;}
 .hero-fade{position:absolute;top:0;bottom:0;right:0;width:58%;background:linear-gradient(to right,var(--dark) 0%,transparent 35%);z-index:2;pointer-events:none;}
@@ -54,7 +55,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .hero-content{position:relative;z-index:5;width:52%;padding:60px 5% 80px;}
 .hero-eyebrow{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:12px;}
 .hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
-.hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(32px,5vw,66px);font-weight:900;line-height:1;color:var(--white);text-transform:uppercase;letter-spacing:-1px;margin-bottom:16px;}
+.hero-title{font-family:'Montserrat',sans-serif;font-size:clamp(28px,7vw,66px);font-weight:900;line-height:1.05;color:var(--white);text-transform:uppercase;letter-spacing:-1px;margin-bottom:16px;}
 .hero-title .gt{color:var(--gold);display:block;}
 .hero-sub{font-size:14px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:32px;max-width:360px;}
 .hero-badges{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px;}
@@ -74,7 +75,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .hp-sub{font-size:11px;color:rgba(255,255,255,.45);letter-spacing:2px;text-transform:uppercase;margin:6px 0 14px;}
 .hp-dosing{font-size:11px;color:rgba(255,255,255,.65);line-height:1.7;text-align:right;}
 .hp-dosing strong{color:var(--gold);}
-.supp-mini{background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.2);padding:12px 16px;margin-top:14px;text-align:left;min-width:200px;}
+.supp-mini{background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.2);padding:12px 16px;margin-top:14px;text-align:left;min-width:200px;max-width:100%;}
 .supp-mini h4{font-family:'Playfair Display',serif;font-size:12px;color:var(--white);border-bottom:3px solid var(--white);padding-bottom:3px;margin-bottom:8px;}
 .supp-mini table{font-size:10px;color:rgba(255,255,255,.6);width:100%;border-collapse:collapse;}
 .supp-mini td{padding:2px 0;}
@@ -114,8 +115,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto;}
 .pcard{position:relative;background:var(--teal);border:1px solid rgba(201,168,76,.15);overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;cursor:pointer;display:flex;flex-direction:column;}
 .pcard:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.5);border-color:rgba(201,168,76,.5);}
-.pcard-img{width:100%;height:260px;object-fit:contain;object-position:center;background:#0d1f1a;transition:transform .4s;display:block;flex-shrink:0;}
-.pcard:hover .pcard-img{width:100%;height:260px;object-fit:contain;object-position:center;background:#0d1f1a;transition:transform .4s;display:block;flex-shrink:0;}
+.pcard-img{width:100%;height:300px;object-fit:contain;object-position:center;background:#0a1810;padding:16px;transition:transform .4s;display:block;flex-shrink:0;}
+.pcard:hover .pcard-img{width:100%;height:300px;object-fit:contain;object-position:center;background:#0a1810;padding:16px;transition:transform .4s;display:block;flex-shrink:0;}
 .pcard-badge{position:absolute;top:14px;right:14px;background:var(--gold);color:var(--dark);font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;z-index:2;}
 .pcard-body{padding:22px 20px;flex:1;display:flex;flex-direction:column;}
 .pmg{display:inline-flex;align-items:baseline;gap:3px;margin-bottom:6px;}
@@ -135,8 +136,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 #gallery{background:var(--dark);padding:70px 0;}
 .carousel-wrap{position:relative;overflow:hidden;max-width:100%;user-select:none;}
 .carousel-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform;}
-.carousel-slide{min-width:33.333%;padding:0 3px;flex-shrink:0;}
-.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}
+.carousel-slide{min-width:33.333%;padding:0 3px;flex-shrink:0;box-sizing:border-box;}
+.carousel-slide img{width:100%;height:300px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0a1810;}
 .carousel-slide img:hover{opacity:.85;}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,31,26,.85);border:1.5px solid var(--gold);color:var(--gold);width:48px;height:48px;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:background .2s;backdrop-filter:blur(4px);}
 .carousel-btn:hover{background:var(--gold);color:var(--dark);}
@@ -145,8 +146,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:20px;}
 .carousel-dot{width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,.3);border:none;cursor:pointer;transition:background .3s,transform .3s;padding:0;}
 .carousel-dot.active{background:var(--gold);transform:scale(1.3);}
-@media(max-width:900px){.carousel-slide{min-width:50%;padding:0 2px;}.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}}
-@media(max-width:580px){.carousel-slide{min-width:100%;padding:0;}.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}}
+@media(max-width:900px){.carousel-slide{min-width:50%;}.carousel-slide img{height:280px;object-fit:contain;object-position:center;background:#0a1810;padding:8px;}}
+@media(max-width:580px){.carousel-slide{min-width:100%;}.carousel-slide img{height:320px;object-fit:contain;object-position:center;background:#0a1810;padding:10px;}}}
 
 /* LIGHTBOX */
 .lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;}
@@ -260,10 +261,21 @@ footer p{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:2px;text-trans
 @media(max-width:900px){
   .nav-links,.btn-nav{display:none;}
   .hamburger{display:flex;}
-  .hero-dog,.hero-fade,.gold-vlines{width:100%;opacity:.18;}
-  .hero-content{width:100%;padding:40px 5% 40px;}
-  .hero-panel{position:relative;right:auto;top:auto;transform:none;text-align:left;padding:0 5% 50px;z-index:5;}
-  .hp-mg{font-size:72px;}
+  .hero-dog{width:100%;opacity:.2;top:68px;}
+  .hero-fade{width:100%;opacity:1;}
+  .gold-vlines{width:100%;opacity:.3;}
+  .hero-content{width:100%;padding:36px 5% 20px;text-align:center;}
+  .hero-eyebrow{justify-content:center;}
+  .hero-sub{margin:0 auto 28px;}
+  .hero-badges{justify-content:center;}
+  .hero-panel{
+    position:relative;right:auto;top:auto;transform:none;
+    text-align:center;padding:20px 5% 50px;z-index:5;
+    display:flex;flex-direction:column;align-items:center;
+  }
+  .hp-mg{font-size:68px;}
+  .hp-dosing{text-align:center;}
+  .supp-mini{text-align:left;width:100%;max-width:320px;}
   .benefits-grid{grid-template-columns:1fr 1fr;}
   .products-grid{grid-template-columns:1fr 1fr;}
   
@@ -292,50 +304,50 @@ var WA = "50684752946"; /* WhatsApp number */
 
 var IMGS = {
   logo:    "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978836/IMG-20260608-WA0275_kb4aqk.jpg",
-  hero:    "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978801/IMG-20260608-WA0271_j39ln1.jpg",
+  hero:    "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978833/IMG-20260608-WA0273_rjfgyl.jpg",
   p500:    "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978874/IMG-20260608-WA0267_lpvzyy.jpg",
   p1000:   "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg",
   p2000:   "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978782/IMG-20260608-WA0272_powdr7.jpg",
   spec:    "https://res.cloudinary.com/dlz6uc574/image/upload/v1780979804/IMG-20260608-WA0276_1_achluy.jpg",
-  g1:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978801/IMG-20260608-WA0271_j39ln1.jpg",
-  g2:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978806/IMG-20260608-WA0269_wxcwnn.jpg",
-  g3:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978857/IMG-20260608-WA0270_srkssw.jpg",
-  g4:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978874/IMG-20260608-WA0267_lpvzyy.jpg",
-  g5:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978833/IMG-20260608-WA0273_rjfgyl.jpg",
-  g6:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg",
-  g7:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780979810/IMG-20260608-WA0278_1_fna1vz.jpg",
-  g8:      "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg"
+  g1: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978827/IMG-20260608-WA0274_khbgeq.jpg",
+  g2: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978874/IMG-20260608-WA0267_lpvzyy.jpg",
+  g3: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg",
+  g4: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978782/IMG-20260608-WA0272_powdr7.jpg",
+  g5: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978806/IMG-20260608-WA0278_azrmfh.jpg",
+  g6: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780979804/IMG-20260608-WA0277_1_dgbvkz.jpg",
+  g7: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780978833/IMG-20260608-WA0273_rjfgyl.jpg",
+  g8: "https://res.cloudinary.com/dlz6uc574/image/upload/v1780979810/IMG-20260608-WA0278_1_fna1vz.jpg"
 };
 
 var PRODUCTS = [
-  {id:"pnew",  name:"CBD Oil — Natural",  size:"Fórmula Natural",  mg:"",     price:25,  sym:"$",
+  {id:"pnew",  name:"CBD Oil Premium",  size:"Fórmula Premium",  mg:"",     price:25,  sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978827/IMG-20260608-WA0274_khbgeq.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:"Nuevo", featured:false},
+   tags:["Sin THC","Probado en Lab","Sin GMO"], badge:"Nuevo", featured:false},
   {id:"p500",  name:"CBD Oil 500MG",   size:"Razas Pequeñas",   mg:"500",  price:35,  sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978874/IMG-20260608-WA0267_lpvzyy.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false},
+   tags:["Sin THC","Probado en Lab","Sin GMO"], badge:null, featured:false},
   {id:"p1000", name:"CBD Oil 1000MG",  size:"Razas Medianas",  mg:"1000", price:55,  sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG","Más Vendido"], badge:"Más Vendido", featured:false},
+   tags:["Sin THC","Probado en Lab","Sin GMO","Más Vendido"], badge:"Más Vendido", featured:false},
   {id:"p2000", name:"CBD Oil 2000MG",  size:"Razas Grandes",   mg:"2000", price:85,  sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978782/IMG-20260608-WA0272_powdr7.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG","Premium"], badge:"Premium", featured:true},
+   tags:["Sin THC","Probado en Lab","Sin GMO","Premium"], badge:"Premium", featured:true},
   {id:"p3000", name:"CBD Oil 3000MG",  size:"Extra Razas Grandes", mg:"3000", price:110, sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978801/IMG-20260608-WA0271_j39ln1.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG","128mg/porción"], badge:null, featured:false},
+   tags:["Sin THC","Probado en Lab","Sin GMO","128mg/porción"], badge:null, featured:false},
   {id:"p1000b",name:"CBD Oil 1000MG",  size:"Fórmula Bulldog Francés", mg:"1000", price:55, sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780979804/IMG-20260608-WA0277_1_dgbvkz.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false},
+   tags:["Sin THC","Probado en Lab","Sin GMO"], badge:null, featured:false},
   {id:"p500b", name:"CBD Oil 500MG",   size:"Razas Activas",  mg:"500",  price:35,  sym:"$",
    desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
    img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978806/IMG-20260608-WA0278_azrmfh.jpg",
-   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false}
+   tags:["Sin THC","Probado en Lab","Sin GMO"], badge:null, featured:false}
 ];
 
 /* ══ CART ══ */
@@ -416,8 +428,7 @@ function lbNext(){ lbIdx=(lbIdx+1)%lbImgs.length; document.getElementById('lbImg
 
 /* ══ INIT ══ */
 document.addEventListener('DOMContentLoaded', function(){
-  /* set logo */
-  document.querySelectorAll('.logo-img').forEach(function(el){ el.src=IMGS.logo; });
+  /* logo set via HTML directly */
   /* set hero dog */
   document.getElementById('heroDog').src=IMGS.hero;
   /* set spec img */
@@ -452,7 +463,29 @@ document.addEventListener('DOMContentLoaded', function(){
   var ctrack=document.getElementById('carouselTrack');
   var cdots=document.getElementById('carouselDots');
 
-  function getVis(){ return window.innerWidth<=580?1:window.innerWidth<=900?2:3; }
+  function getVis(){ return window.innerWidth<=640?1:window.innerWidth<=1024?2:3; }
+
+  function resetTimer(){
+    if(carouselTimer) clearInterval(carouselTimer);
+    carouselTimer=setInterval(function(){
+      var vis=getVis();
+      var maxI=carouselImgs.length-vis;
+      carouselGoTo(carouselIdx>=maxI?0:carouselIdx+1);
+    },3500);
+  }
+
+  function carouselGoTo(i){
+    var vis=getVis();
+    var maxI=carouselImgs.length-vis;
+    carouselIdx=Math.max(0,Math.min(i,maxI));
+    ctrack.style.transition='transform .45s cubic-bezier(.4,0,.2,1)';
+    ctrack.style.transform='translateX(-'+(carouselIdx*(100/vis))+'%)';
+    document.querySelectorAll('.carousel-dot').forEach(function(d,j){
+      d.classList.toggle('active',j===carouselIdx);
+    });
+  }
+
+  function carouselMove(dir){ carouselGoTo(carouselIdx+dir); resetTimer(); }
 
   carouselImgs.forEach(function(src,i){
     var slide=document.createElement('div');
@@ -466,7 +499,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function buildDots(){
     cdots.innerHTML='';
-    var vis=getVis(), total=carouselImgs.length-vis+1;
+    var vis=getVis();
+    var total=carouselImgs.length-vis+1;
     for(var d=0;d<total;d++){
       var dot=document.createElement('button');
       dot.className='carousel-dot'+(d===0?' active':'');
@@ -475,27 +509,10 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
   buildDots();
-
-  function carouselGoTo(i){
-    var vis=getVis();
-    carouselIdx=Math.max(0,Math.min(i,carouselImgs.length-vis));
-    ctrack.style.transform='translateX(-'+(carouselIdx*(100/vis))+'%)';
-    document.querySelectorAll('.carousel-dot').forEach(function(d,j){ d.classList.toggle('active',j===carouselIdx); });
-  }
-
-  function carouselMove(dir){ carouselGoTo(carouselIdx+dir); resetTimer(); }
-
-  function resetTimer(){
-    if(carouselTimer) clearInterval(carouselTimer);
-    carouselTimer=setInterval(function(){
-      var vis=getVis();
-      carouselGoTo(carouselIdx>=carouselImgs.length-vis?0:carouselIdx+1);
-    },3500);
-  }
   resetTimer();
 
-  var tsX=0, tsDiff=0;
-  ctrack.addEventListener('touchstart',function(e){ tsX=e.touches[0].clientX; },{passive:true});
+  var tsX=0,tsDiff=0;
+  ctrack.addEventListener('touchstart',function(e){ tsX=e.touches[0].clientX; tsDiff=0; },{passive:true});
   ctrack.addEventListener('touchmove',function(e){
     tsDiff=tsX-e.touches[0].clientX;
     var vis=getVis();
@@ -504,7 +521,6 @@ document.addEventListener('DOMContentLoaded', function(){
     ctrack.style.transform='translateX(-'+pct+'%)';
   },{passive:true});
   ctrack.addEventListener('touchend',function(){
-    ctrack.style.transition='transform .45s cubic-bezier(.4,0,.2,1)';
     if(Math.abs(tsDiff)>50) carouselMove(tsDiff>0?1:-1);
     else carouselGoTo(carouselIdx);
     tsDiff=0;
@@ -514,7 +530,7 @@ document.addEventListener('DOMContentLoaded', function(){
   window.addEventListener('resize',function(){ buildDots(); carouselGoTo(0); });
 
   buildDots();
-  cResetAuto();
+  resetTimer();
 
   /* scroll reveal */
   document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
@@ -541,7 +557,7 @@ var obs=new IntersectionObserver(function(entries){
 <!-- NAVBAR -->
 <nav>
   <a class="nav-logo" href="#home">
-    <img class="logo-img" src="" alt="Dr. Chis" style="height:46px;width:auto;object-fit:contain;">
+    <img class="logo-img" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1780978836/IMG-20260608-WA0275_kb4aqk.jpg" alt="Dr. Chis" style="height:54px;width:auto;object-fit:contain;border-radius:4px;">
   </a>
   <ul class="nav-links">
     <li><a href="#home">Inicio</a></li>
@@ -635,7 +651,7 @@ var obs=new IntersectionObserver(function(entries){
       <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><span>Bienestar</span></div>
       <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span>Sin THC</span></div>
       <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg></div><span>Probado en Lab</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span>Sin OMG</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span>Sin GMO</span></div>
     </div>
     <a href="#products" class="btn-hero">Comprar &nbsp;🛒</a>
   </div>
@@ -663,7 +679,7 @@ var obs=new IntersectionObserver(function(entries){
 <div class="trust-bar">
   <div class="ti"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><span>Probado en Lab</span></div>
   <div class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg><span>Extracto Orgánico de Cáñamo</span></div>
-  <div class="ti"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Sin OMG</span></div>
+  <div class="ti"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Sin GMO</span></div>
   <div class="ti"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="15" y1="9" x2="15" y2="15"/></svg><span>Solo Uso Oral</span></div>
 </div>
 
@@ -684,7 +700,8 @@ var obs=new IntersectionObserver(function(entries){
 
 <!-- PRODUCTS -->
 <section id="products" style="background:var(--dark);padding:90px 5%;">
-  <div class="prod-header reveal">
+
+    <div class="prod-header reveal">
     <div class="section-eye" style="color:var(--gold);">Nuestra Línea</div>
     <h2 class="section-title" style="color:var(--white);">ELIGE TU FÓRMULA</h2>
     <p class="section-sub" style="color:rgba(255,255,255,.5);">Aceite CBD Full Spectrum — múltiples concentraciones para cada tamaño y necesidad.</p>
@@ -781,7 +798,7 @@ var obs=new IntersectionObserver(function(entries){
 <!-- FOOTER -->
 <footer>
   <p>© 2025 Dr. Chis · Todos los derechos reservados</p>
-  <img class="logo-img" src="" alt="Dr. Chis" style="height:36px;width:auto;object-fit:contain;">
+  <img class="logo-img" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1780978836/IMG-20260608-WA0275_kb4aqk.jpg" alt="Dr. Chis" style="height:36px;width:auto;object-fit:contain;border-radius:3px;">
   <p class="f-oral">Solo Uso Oral</p>
 </footer>
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Chis — Premium CBD Oil for Pets</title>
-<meta name="description" content="Dr. Chis Premium CBD Oil for pets. Full Spectrum, Lab Tested, Non GMO. Natural wellness for your best friend.">
-<meta property="og:title" content="Dr. Chis — Premium CBD Oil for Pets">
-<meta property="og:description" content="Full Spectrum CBD Oil for pets. Lab Tested, Non GMO, Made in USA.">
+<title>Dr. Chis — Aceite CBD Premium para Mascotas</title>
+<meta name="description" content="Aceite CBD Premium Dr. Chis para mascotas. Full Spectrum, Probado en laboratorio, Sin OMG. Bienestar natural para tu mejor amigo.">
+<meta property="og:title" content="Dr. Chis — Aceite CBD Premium para Mascotas">
+<meta property="og:description" content="Full Spectrum CBD Oil for pets. Probado en Lab, Sin OMG, Made in USA.">
 <meta property="og:image" content="https://res.cloudinary.com/dlz6uc574/image/upload/v1780978836/IMG-20260608-WA0275_kb4aqk.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -111,11 +111,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 /* PRODUCTS */
 #products{background:var(--dark);padding:90px 5%;}
 .prod-header{text-align:center;margin-bottom:52px;}
-.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1080px;margin:0 auto;}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1200px;margin:0 auto;}
 .pcard{position:relative;background:var(--teal);border:1px solid rgba(201,168,76,.15);overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;cursor:pointer;display:flex;flex-direction:column;}
 .pcard:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.5);border-color:rgba(201,168,76,.5);}
-.pcard-img{width:100%;height:240px;object-fit:cover;object-position:center;transition:transform .4s;display:block;flex-shrink:0;}
-.pcard:hover .pcard-img{transform:scale(1.05);}
+.pcard-img{width:100%;height:260px;object-fit:contain;object-position:center;background:#0d1f1a;transition:transform .4s;display:block;flex-shrink:0;}
+.pcard:hover .pcard-img{width:100%;height:260px;object-fit:contain;object-position:center;background:#0d1f1a;transition:transform .4s;display:block;flex-shrink:0;}
 .pcard-badge{position:absolute;top:14px;right:14px;background:var(--gold);color:var(--dark);font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;z-index:2;}
 .pcard-body{padding:22px 20px;flex:1;display:flex;flex-direction:column;}
 .pmg{display:inline-flex;align-items:baseline;gap:3px;margin-bottom:6px;}
@@ -136,7 +136,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .carousel-wrap{position:relative;overflow:hidden;max-width:100%;user-select:none;}
 .carousel-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform;}
 .carousel-slide{min-width:33.333%;padding:0 3px;flex-shrink:0;}
-.carousel-slide img{width:100%;height:420px;object-fit:cover;object-position:center center;display:block;cursor:pointer;transition:opacity .3s;border-radius:2px;}
+.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}
 .carousel-slide img:hover{opacity:.85;}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(13,31,26,.85);border:1.5px solid var(--gold);color:var(--gold);width:48px;height:48px;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:background .2s;backdrop-filter:blur(4px);}
 .carousel-btn:hover{background:var(--gold);color:var(--dark);}
@@ -145,8 +145,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:20px;}
 .carousel-dot{width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,.3);border:none;cursor:pointer;transition:background .3s,transform .3s;padding:0;}
 .carousel-dot.active{background:var(--gold);transform:scale(1.3);}
-@media(max-width:900px){.carousel-slide{min-width:50%;padding:0 2px;}.carousel-slide img{height:300px;}}
-@media(max-width:580px){.carousel-slide{min-width:100%;padding:0;}.carousel-slide img{height:280px;}}
+@media(max-width:900px){.carousel-slide{min-width:50%;padding:0 2px;}.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}}
+@media(max-width:580px){.carousel-slide{min-width:100%;padding:0;}.carousel-slide img{width:100%;height:380px;object-fit:contain;object-position:center;display:block;cursor:pointer;transition:opacity .3s;background:#0d1f1a;}}
 
 /* LIGHTBOX */
 .lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;}
@@ -266,7 +266,7 @@ footer p{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:2px;text-trans
   .hp-mg{font-size:72px;}
   .benefits-grid{grid-template-columns:1fr 1fr;}
   .products-grid{grid-template-columns:1fr 1fr;}
-  .products-grid .pcard:last-child{grid-column:1/3;}
+  
   .gallery-grid{grid-template-columns:repeat(3,1fr);}
   .specs-layout{grid-template-columns:1fr;gap:40px;}
   .tgrid{grid-template-columns:1fr;}
@@ -308,15 +308,34 @@ var IMGS = {
 };
 
 var PRODUCTS = [
-  {id:"p500", name:"CBD Oil 500MG", size:"Small Breeds", mg:"500", price:35, sym:"$",
-   desc:"Full Spectrum · Omega 3 & 6 · 30ml / 1 fl oz",
-   img: IMGS.p500, tags:["THC Free","Lab Tested","Non GMO"], badge:null, featured:false},
-  {id:"p1000", name:"CBD Oil 1000MG", size:"Medium Breeds", mg:"1000", price:55, sym:"$",
-   desc:"Full Spectrum · Omega 3 & 6 · 30ml / 1 fl oz",
-   img: IMGS.p1000, tags:["THC Free","Lab Tested","Non GMO","Best Seller"], badge:"Best Seller", featured:false},
-  {id:"p2000", name:"CBD Oil 2000MG", size:"Large Breeds", mg:"2000", price:85, sym:"$",
-   desc:"Full Spectrum · Omega 3 & 6 · 30ml / 1 fl oz",
-   img: IMGS.p2000, tags:["THC Free","Lab Tested","Non GMO","128mg/serving"], badge:"Premium", featured:true}
+  {id:"pnew",  name:"CBD Oil — Natural",  size:"Fórmula Natural",  mg:"",     price:25,  sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978827/IMG-20260608-WA0274_khbgeq.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:"Nuevo", featured:false},
+  {id:"p500",  name:"CBD Oil 500MG",   size:"Razas Pequeñas",   mg:"500",  price:35,  sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978874/IMG-20260608-WA0267_lpvzyy.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false},
+  {id:"p1000", name:"CBD Oil 1000MG",  size:"Razas Medianas",  mg:"1000", price:55,  sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978841/IMG-20260608-WA0268_e1rs1l.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG","Más Vendido"], badge:"Más Vendido", featured:false},
+  {id:"p2000", name:"CBD Oil 2000MG",  size:"Razas Grandes",   mg:"2000", price:85,  sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978782/IMG-20260608-WA0272_powdr7.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG","Premium"], badge:"Premium", featured:true},
+  {id:"p3000", name:"CBD Oil 3000MG",  size:"Extra Razas Grandes", mg:"3000", price:110, sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978801/IMG-20260608-WA0271_j39ln1.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG","128mg/porción"], badge:null, featured:false},
+  {id:"p1000b",name:"CBD Oil 1000MG",  size:"Fórmula Bulldog Francés", mg:"1000", price:55, sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780979804/IMG-20260608-WA0277_1_dgbvkz.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false},
+  {id:"p500b", name:"CBD Oil 500MG",   size:"Razas Activas",  mg:"500",  price:35,  sym:"$",
+   desc:"Full Spectrum · Omega 3 y 6 · 30ml / 1 fl oz",
+   img:"https://res.cloudinary.com/dlz6uc574/image/upload/v1780978806/IMG-20260608-WA0278_azrmfh.jpg",
+   tags:["Sin THC","Probado en Lab","Sin OMG"], badge:null, featured:false}
 ];
 
 /* ══ CART ══ */
@@ -328,7 +347,7 @@ function addToCart(id){
   var p = PRODUCTS.find(function(x){return x.id===id;});
   if(!p) return;
   if(cart[id]) cart[id].qty++; else cart[id]={id:id,name:p.name,price:p.price,sym:p.sym,img:p.img,qty:1};
-  updateCart(); showToast("✓  "+p.name+" added to cart");
+  updateCart(); showToast("✓  "+p.name+" agregado al carrito");
 }
 function removeFromCart(id){ delete cart[id]; updateCart(); }
 function changeQty(id,d){
@@ -345,7 +364,7 @@ function updateCart(){
 }
 function renderCartItems(){
   var el=document.getElementById('cartItems'), keys=Object.keys(cart);
-  if(!keys.length){el.innerHTML='<div class="cart-empty">Your cart is empty</div>';return;}
+  if(!keys.length){el.innerHTML='<div class="cart-empty">Tu carrito está vacío</div>';return;}
   el.innerHTML=keys.map(function(id){
     var i=cart[id];
     return '<div class="cart-item">'
@@ -366,11 +385,11 @@ function renderCartItems(){
 function openCart(){ document.getElementById('cartOverlay').classList.add('open'); document.getElementById('cartDrawer').classList.add('open'); }
 function closeCart(){ document.getElementById('cartOverlay').classList.remove('open'); document.getElementById('cartDrawer').classList.remove('open'); }
 function checkout(){
-  if(!Object.keys(cart).length){showToast("Your cart is empty!");return;}
-  var lines=["Hello! I'd like to order from *Dr. Chis CBD Oil*:\n"];
+  if(!Object.keys(cart).length){showToast("Tu carrito está vacío!");return;}
+  var lines=["¡Hola! Me gustaría hacer un pedido de *Dr. Chis CBD Oil*:\n"];
   Object.values(cart).forEach(function(i){ lines.push("• "+i.name+" x"+i.qty+" = "+i.sym+(i.price*i.qty).toFixed(2)); });
   lines.push("\n*Total: $"+getTotal().toFixed(2)+"*");
-  lines.push("\nPlease confirm my order. Thank you! 🐾");
+  lines.push("\nPor favor confirma mi pedido. ¡Gracias! 🐾");
   window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(lines.join("\n")),"_blank");
 }
 
@@ -420,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function(){
         +'<div class="pdesc">'+p.desc+'</div>'
         +'<div class="pprice">'+p.sym+p.price.toFixed(2)+'</div>'
         +'<div class="ptags">'+tags+'</div>'
-        +'<button class="'+bc+'" onclick="addToCart(\''+p.id+'\')">🛒 Add to Cart</button>'
+        +'<button class="'+bc+'" onclick="addToCart(\''+p.id+'\')">🛒 Agregar al Carrito</button>'
       +'</div>';
     grid.appendChild(d);
     obs.observe(d);
@@ -428,14 +447,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
   /* build carousel */
   var carouselImgs=[IMGS.g1,IMGS.g2,IMGS.g3,IMGS.g4,IMGS.g5,IMGS.g6,IMGS.g7,IMGS.g8];
-  var cIdx=0, cAuto=null;
-  var track=document.getElementById('carouselTrack');
-  var dotsWrap=document.getElementById('carouselDots');
+  var carouselIdx=0;
+  var carouselTimer=null;
+  var ctrack=document.getElementById('carouselTrack');
+  var cdots=document.getElementById('carouselDots');
 
-  function cVisible(){ return window.innerWidth<=580?1:window.innerWidth<=900?2:3; }
-  function cMax(){ return Math.max(0, carouselImgs.length - cVisible()); }
+  function getVis(){ return window.innerWidth<=580?1:window.innerWidth<=900?2:3; }
 
-  /* build slides */
   carouselImgs.forEach(function(src,i){
     var slide=document.createElement('div');
     slide.className='carousel-slide';
@@ -443,59 +461,57 @@ document.addEventListener('DOMContentLoaded', function(){
     img.src=src; img.alt='Dr. Chis '+(i+1); img.loading='lazy';
     img.onclick=function(){ openLightbox(carouselImgs,i); };
     slide.appendChild(img);
-    track.appendChild(slide);
+    ctrack.appendChild(slide);
   });
 
-  /* build dots */
   function buildDots(){
-    dotsWrap.innerHTML='';
-    var total=cMax()+1;
+    cdots.innerHTML='';
+    var vis=getVis(), total=carouselImgs.length-vis+1;
     for(var d=0;d<total;d++){
       var dot=document.createElement('button');
-      dot.className='carousel-dot'+(d===cIdx?' active':'');
-      (function(dd){ dot.onclick=function(){ cGoTo(dd); cResetAuto(); }; })(d);
-      dotsWrap.appendChild(dot);
+      dot.className='carousel-dot'+(d===0?' active':'');
+      (function(idx){ dot.onclick=function(){ carouselGoTo(idx); resetTimer(); }; })(d);
+      cdots.appendChild(dot);
     }
   }
+  buildDots();
 
-  function cGoTo(i){
-    cIdx=Math.max(0,Math.min(i,cMax()));
-    var pct=(100/cVisible())*cIdx;
-    track.style.transform='translateX(-'+pct+'%)';
-    document.querySelectorAll('.carousel-dot').forEach(function(d,j){ d.classList.toggle('active',j===cIdx); });
+  function carouselGoTo(i){
+    var vis=getVis();
+    carouselIdx=Math.max(0,Math.min(i,carouselImgs.length-vis));
+    ctrack.style.transform='translateX(-'+(carouselIdx*(100/vis))+'%)';
+    document.querySelectorAll('.carousel-dot').forEach(function(d,j){ d.classList.toggle('active',j===carouselIdx); });
   }
 
-  function carouselMove(dir){
-    var next=cIdx+dir;
-    if(next>cMax()) next=0;
-    if(next<0) next=cMax();
-    cGoTo(next);
-    cResetAuto();
-  }
+  function carouselMove(dir){ carouselGoTo(carouselIdx+dir); resetTimer(); }
 
-  function cResetAuto(){
-    clearInterval(cAuto);
-    cAuto=setInterval(function(){ carouselMove(1); },4000);
+  function resetTimer(){
+    if(carouselTimer) clearInterval(carouselTimer);
+    carouselTimer=setInterval(function(){
+      var vis=getVis();
+      carouselGoTo(carouselIdx>=carouselImgs.length-vis?0:carouselIdx+1);
+    },3500);
   }
+  resetTimer();
 
-  /* touch swipe */
-  var tsX=0, tsDragging=false;
-  track.addEventListener('touchstart',function(e){tsX=e.touches[0].clientX;tsDragging=true;},{passive:true});
-  track.addEventListener('touchmove',function(e){if(tsDragging)e.preventDefault();},{passive:false});
-  track.addEventListener('touchend',function(e){
-    if(!tsDragging)return; tsDragging=false;
-    var dx=tsX-e.changedTouches[0].clientX;
-    if(Math.abs(dx)>40){ carouselMove(dx>0?1:-1); }
+  var tsX=0, tsDiff=0;
+  ctrack.addEventListener('touchstart',function(e){ tsX=e.touches[0].clientX; },{passive:true});
+  ctrack.addEventListener('touchmove',function(e){
+    tsDiff=tsX-e.touches[0].clientX;
+    var vis=getVis();
+    var pct=(carouselIdx*(100/vis))+(tsDiff/ctrack.offsetWidth*100);
+    ctrack.style.transition='none';
+    ctrack.style.transform='translateX(-'+pct+'%)';
+  },{passive:true});
+  ctrack.addEventListener('touchend',function(){
+    ctrack.style.transition='transform .45s cubic-bezier(.4,0,.2,1)';
+    if(Math.abs(tsDiff)>50) carouselMove(tsDiff>0?1:-1);
+    else carouselGoTo(carouselIdx);
+    tsDiff=0;
+    resetTimer();
   });
 
-  /* keyboard arrows */
-  document.addEventListener('keydown',function(e){
-    if(e.key==='ArrowLeft') carouselMove(-1);
-    if(e.key==='ArrowRight') carouselMove(1);
-  });
-
-  /* resize */
-  window.addEventListener('resize',function(){ buildDots(); cGoTo(0); });
+  window.addEventListener('resize',function(){ buildDots(); carouselGoTo(0); });
 
   buildDots();
   cResetAuto();
@@ -513,13 +529,13 @@ var obs=new IntersectionObserver(function(entries){
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <button class="mobile-close" onclick="closeMobile()">✕</button>
-  <a href="#home" onclick="closeMobile()">Home</a>
-  <a href="#about" onclick="closeMobile()">About</a>
-  <a href="#products" onclick="closeMobile()">Products</a>
-  <a href="#benefits" onclick="closeMobile()">Benefits</a>
-  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#home" onclick="closeMobile()">Inicio</a>
+  <a href="#about" onclick="closeMobile()">Nosotros</a>
+  <a href="#products" onclick="closeMobile()">Productos</a>
+  <a href="#benefits" onclick="closeMobile()">Beneficios</a>
+  <a href="#gallery" onclick="closeMobile()">Galería</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
-  <a href="#products" class="btn-nav" onclick="closeMobile()">Shop Now 🛒</a>
+  <a href="#products" class="btn-nav" onclick="closeMobile()">Comprar 🛒</a>
 </div>
 
 <!-- NAVBAR -->
@@ -528,17 +544,33 @@ var obs=new IntersectionObserver(function(entries){
     <img class="logo-img" src="" alt="Dr. Chis" style="height:46px;width:auto;object-fit:contain;">
   </a>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#benefits">Benefits</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#home">Inicio</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#products">Productos</a></li>
+    <li><a href="#benefits">Beneficios</a></li>
+    <li><a href="#gallery">Galería</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#products" class="btn-nav">Shop Now 🛒</a>
+  <a href="#products" class="btn-nav">Comprar 🛒</a>
   <button class="hamburger" onclick="openMobile()"><span></span><span></span><span></span></button>
 </nav>
 
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/50684752946" target="_blank" id="waFab" style="
+  position:fixed;bottom:94px;right:24px;z-index:800;
+  width:54px;height:54px;border-radius:50%;
+  background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.5);
+  transition:transform .2s,box-shadow .3s;
+  text-decoration:none;
+" onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 8px 30px rgba(37,211,102,.7)';"
+   onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(37,211,102,.5)';">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
 <!-- CART FAB -->
 <button class="cart-fab" onclick="openCart()">
   <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
@@ -549,13 +581,13 @@ var obs=new IntersectionObserver(function(entries){
 <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 <div class="cart-drawer" id="cartDrawer">
   <div style="padding:12px 16px;border-bottom:1px solid rgba(201,168,76,.15);">
-    <button onclick="closeCart();window.scrollTo({top:0,behavior:'smooth'});" style="background:rgba(201,168,76,0.15);border:1.5px solid var(--gold);color:var(--gold);font-family:Montserrat,sans-serif;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;">&#8592; Keep Shopping</button>
+    <button onclick="closeCart()" style="background:rgba(201,168,76,0.15);border:1.5px solid var(--gold);color:var(--gold);font-family:Montserrat,sans-serif;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;">&#8592; Keep Shopping</button>
   </div>
   <div class="cart-head" style="border-bottom:1px solid rgba(201,168,76,.15);">
-    <h3 style="font-family:Montserrat,sans-serif;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:white;">🛒 Your Cart</h3>
+    <h3 style="font-family:Montserrat,sans-serif;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:white;">🛒 Tu Carrito</h3>
     <button class="cart-close" onclick="closeCart()">✕</button>
   </div>
-  <div class="cart-items" id="cartItems"><div class="cart-empty">Your cart is empty</div></div>
+  <div class="cart-items" id="cartItems"><div class="cart-empty">Tu carrito está vacío</div></div>
   <div class="cart-foot">
     <div class="cart-total-row">
       <span>Total</span>
@@ -563,9 +595,9 @@ var obs=new IntersectionObserver(function(entries){
     </div>
     <button class="btn-checkout" onclick="checkout()">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.97 7.18 19.79 19.79 0 01.9 4.6 2 2 0 012.9 2.4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 10.1a16 16 0 006.29 6.29l1.06-1.06a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.04z"/></svg>
-      Order via WhatsApp
+      Pedir por WhatsApp
     </button>
-    <div class="cart-note">You'll confirm the order on WhatsApp</div>
+    <div class="cart-note">Confirmarás el pedido por WhatsApp</div>
   </div>
 </div>
 
@@ -594,34 +626,34 @@ var obs=new IntersectionObserver(function(entries){
     <span style="left:66%"></span><span style="left:84%"></span>
   </div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Natural Wellness</div>
-    <h1 class="hero-title">NATURAL SUPPORT<br>FOR A<span class="gt">BETTER LIFE</span></h1>
-    <p class="hero-sub">Premium full spectrum CBD oil formulated to support your pet's well-being naturally. With Omega 3 &amp; 6.</p>
+    <div class="hero-eyebrow">Bienestar Natural</div>
+    <h1 class="hero-title">APOYO NATURAL<br>PARA UNA<span class="gt">MEJOR VIDA</span></h1>
+    <p class="hero-sub">Aceite CBD Full Spectrum formulado para apoyar el bienestar de tu mascota de forma natural. Con Omega 3 y 6.</p>
     <div class="hero-badges">
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l2 2 4-4"/></svg></div><span>Natural Ingredients</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Premium Quality</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><span>Well-Being</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span>THC Free</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg></div><span>Lab Tested</span></div>
-      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span>Non GMO</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l2 2 4-4"/></svg></div><span>Ingredientes Naturales</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>Calidad Premium</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><span>Bienestar</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span>Sin THC</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg></div><span>Probado en Lab</span></div>
+      <div class="hbadge"><div class="hbadge-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><span>Sin OMG</span></div>
     </div>
-    <a href="#products" class="btn-hero">Shop Now &nbsp;🛒</a>
+    <a href="#products" class="btn-hero">Comprar &nbsp;🛒</a>
   </div>
   <div class="hero-panel">
-    <div class="hp-label">Natural Flavor</div>
+    <div class="hp-label">Sabor Natural</div>
     <div class="hp-mg">2000<sup>MG</sup></div>
     <div class="hp-name">CBD OIL</div>
     <div class="hp-sub">Full Spectrum CBD Oil</div>
-    <div class="hp-dosing"><strong>DOSING:</strong><br>3–5 DROPS<br>3× DAILY · SUBLINGUALLY</div>
+    <div class="hp-dosing"><strong>DOSING:</strong><br>3–5 GOTAS<br>3× AL DÍA · SUBLINGUAL</div>
     <div class="supp-mini">
-      <h4>Supplement Facts</h4>
+      <h4>Información Nutricional</h4>
       <table>
-        <tr><td>Serving Size</td><td>6.5ml</td></tr>
-        <tr><td>Servings</td><td>60</td></tr>
-        <tr class="sb"><td>Amount/serving</td><td>%DV</td></tr>
-        <tr><td>Calories</td><td>5</td></tr>
-        <tr><td>Total Fat</td><td>0.5g 1%</td></tr>
-        <tr class="sb"><td>Phytocannabinoids</td><td>128mg</td></tr>
+        <tr><td>Tamaño de porción</td><td>6.5ml</td></tr>
+        <tr><td>Porciones</td><td>60</td></tr>
+        <tr class="sb"><td>Por porción</td><td>%DV</td></tr>
+        <tr><td>Calorías</td><td>5</td></tr>
+        <tr><td>Grasa Total</td><td>0.5g 1%</td></tr>
+        <tr class="sb"><td>Fitocannabinoides</td><td>128mg</td></tr>
       </table>
     </div>
   </div>
@@ -629,23 +661,23 @@ var obs=new IntersectionObserver(function(entries){
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="ti"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><span>Lab Tested</span></div>
-  <div class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg><span>Organic Hemp Extract</span></div>
-  <div class="ti"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Non GMO</span></div>
-  <div class="ti"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="15" y1="9" x2="15" y2="15"/></svg><span>Oral Use Only</span></div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><span>Probado en Lab</span></div>
+  <div class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg><span>Extracto Orgánico de Cáñamo</span></div>
+  <div class="ti"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Sin OMG</span></div>
+  <div class="ti"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="15" y1="9" x2="15" y2="15"/></svg><span>Solo Uso Oral</span></div>
 </div>
 
 <!-- BENEFITS -->
 <section id="about">
 <div id="benefits" style="padding:90px 5%;background:var(--cream);text-align:center;">
-  <div class="section-eye reveal">Why Choose Dr. Chis</div>
-  <h2 class="section-title reveal">WHY PET PARENTS CHOOSE<br>DR. CHIS CBD OIL</h2>
-  <p class="section-sub reveal">Our premium CBD oil is crafted with natural, high-quality ingredients to support your best friend every day.</p>
+  <div class="section-eye reveal">Por qué elegir Dr. Chis</div>
+  <h2 class="section-title reveal">POR QUÉ LOS DUEÑOS ELIGEN<br>EL ACEITE CBD DR. CHIS</h2>
+  <p class="section-sub reveal">Nuestro aceite CBD premium está elaborado con ingredientes naturales de alta calidad para apoyar a tu mejor amigo cada día.</p>
   <div class="benefits-grid">
-    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="bname">Supports Mobility</div><p class="bdesc">Helps maintain healthy joints and supports an active lifestyle.</p></div>
-    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div class="bname">Promotes Calm</div><p class="bdesc">Helps ease stress and promotes relaxation naturally.</p></div>
-    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="bname">Immune Support</div><p class="bdesc">Supports a healthy immune system and overall well-being.</p></div>
-    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="bname">Natural &amp; Safe</div><p class="bdesc">Made with natural ingredients you can trust.</p></div>
+    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="bname">Apoya la Movilidad</div><p class="bdesc">Ayuda a mantener articulaciones sanas y apoya un estilo de vida activo.</p></div>
+    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div class="bname">Promueve la Calma</div><p class="bdesc">Ayuda a reducir el estrés y promueve la relajación de forma natural.</p></div>
+    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="bname">Apoya el Sistema Inmune</div><p class="bdesc">Apoya un sistema inmunológico saludable y el bienestar general.</p></div>
+    <div class="bcard reveal"><div class="bicon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="bname">Natural y Seguro</div><p class="bdesc">Elaborado con ingredientes naturales en los que puedes confiar.</p></div>
   </div>
 </div>
 </section>
@@ -653,9 +685,9 @@ var obs=new IntersectionObserver(function(entries){
 <!-- PRODUCTS -->
 <section id="products" style="background:var(--dark);padding:90px 5%;">
   <div class="prod-header reveal">
-    <div class="section-eye" style="color:var(--gold);">Our Line</div>
-    <h2 class="section-title" style="color:var(--white);">CHOOSE YOUR FORMULA</h2>
-    <p class="section-sub" style="color:rgba(255,255,255,.5);">Full Spectrum CBD Oil — multiple strengths for every size and need.</p>
+    <div class="section-eye" style="color:var(--gold);">Nuestra Línea</div>
+    <h2 class="section-title" style="color:var(--white);">ELIGE TU FÓRMULA</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,.5);">Aceite CBD Full Spectrum — múltiples concentraciones para cada tamaño y necesidad.</p>
   </div>
   <div class="products-grid" id="productsGrid"></div>
 </section>
@@ -663,8 +695,8 @@ var obs=new IntersectionObserver(function(entries){
 <!-- CAROUSEL -->
 <section id="gallery" style="background:var(--dark);padding:70px 0;">
   <div style="text-align:center;margin-bottom:40px;padding:0 5%;">
-    <div class="section-eye" style="color:var(--gold);">Product Gallery</div>
-    <h2 class="section-title" style="color:var(--white);">DR. CHIS IN DETAIL</h2>
+    <div class="section-eye" style="color:var(--gold);">Galería de Productos</div>
+    <h2 class="section-title" style="color:var(--white);">DR. CHIS EN DETALLE</h2>
   </div>
   <div class="carousel-wrap">
     <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)">&#8592;</button>
@@ -678,79 +710,79 @@ var obs=new IntersectionObserver(function(entries){
 <section id="specs" style="background:var(--cream2);padding:90px 5%;">
   <div class="specs-layout">
     <div class="specs-img reveal">
-      <img id="specImg" src="" alt="Dr. Chis CBD Oil Supplement Facts">
+      <img id="specImg" src="" alt="Dr. Chis CBD Oil Información Nutricional">
     </div>
     <div class="reveal">
-      <div class="section-eye" style="justify-content:flex-start;">Product Details</div>
-      <h2 class="section-title" style="text-align:left;font-size:clamp(22px,3.5vw,34px);">NATURAL WELLNESS.<br><span style="color:var(--gold);">HAPPIER PETS.</span></h2>
-      <p style="font-size:13px;color:#6a7d78;margin:14px 0 22px;line-height:1.8;">Give your pet the natural support they deserve — crafted with care, tested for purity.</p>
+      <div class="section-eye" style="justify-content:flex-start;">Detalles del Producto</div>
+      <h2 class="section-title" style="text-align:left;font-size:clamp(22px,3.5vw,34px);">BIENESTAR NATURAL.<br><span style="color:var(--gold);">MASCOTAS MÁS FELICES.</span></h2>
+      <p style="font-size:13px;color:#6a7d78;margin:14px 0 22px;line-height:1.8;">Dale a tu mascota el apoyo natural que merece — elaborado con cuidado, probado por pureza.</p>
       <div class="supp-card">
-        <h3>Supplement Facts</h3>
-        <div class="sf-row"><span>Serving Size</span><span>6.5ml (1 Dropper)</span></div>
-        <div class="sf-row thick bold"><span>Servings Per Container</span><span>60</span></div>
-        <div class="sf-row bold"><span>Amount per serving</span><span>% DV</span></div>
-        <div class="sf-row"><span>Calories</span><span>5</span></div>
-        <div class="sf-row"><span>Total Fat</span><span>0.5g &nbsp;1%</span></div>
-        <div class="sf-row bold"><span>Total Phytocannabinoids</span><span>128mg</span></div>
-        <div class="sf-note">*Percent DV based on 2,000 cal diet. **DV not established.<br>Other ingredients: MCT Oil (from coconut), Natural Flavor.</div>
+        <h3>Información Nutricional</h3>
+        <div class="sf-row"><span>Tamaño de porción</span><span>6.5ml (1 Dropper)</span></div>
+        <div class="sf-row thick bold"><span>Porciones Per Container</span><span>60</span></div>
+        <div class="sf-row bold"><span>Cantidad por porción</span><span>% DV</span></div>
+        <div class="sf-row"><span>Calorías</span><span>5</span></div>
+        <div class="sf-row"><span>Grasa Total</span><span>0.5g &nbsp;1%</span></div>
+        <div class="sf-row bold"><span>Total Fitocannabinoides</span><span>128mg</span></div>
+        <div class="sf-note">*Percent DV based on 2,000 cal diet. **DV not established.<br>Other ingredients: MCT Oil (from coconut), Sabor Natural.</div>
       </div>
       <div class="dosing-block">
-        <div class="dosing-lbl">How to Use</div>
-        <div class="dosing-txt">3–5 DROPS · 3 TIMES A DAY · SUBLINGUALLY</div>
-        <div class="dosing-sub">Oral Use Only · Shake well before use</div>
+        <div class="dosing-lbl">Cómo Usar</div>
+        <div class="dosing-txt">3–5 GOTAS · 3 VECES AL DÍA · SUBLINGUAL</div>
+        <div class="dosing-sub">Solo Uso Oral · Shake well before use</div>
       </div>
       <div class="ing-list">
-        <strong>Ingredients:</strong> Hemp Oil, THC-CBD 1:1<br>
-        <strong>Content:</strong> 30ml / 1 fl oz &nbsp;·&nbsp; <strong>Gluten Free</strong> &nbsp;·&nbsp; <strong>Vegan Friendly</strong><br>
-        <strong>Made in USA</strong> &nbsp;★★★★★
+        <strong>Ingredientes:</strong> Aceite de Cáñamo, THC-CBD 1:1<br>
+        <strong>Contenido:</strong> 30ml / 1 fl oz &nbsp;·&nbsp; <strong>Sin Gluten</strong> &nbsp;·&nbsp; <strong>Vegano</strong><br>
+        <strong>Hecho en USA</strong> &nbsp;★★★★★
       </div>
-      <button class="btn-hero" onclick="addToCart('p2000');openCart();" style="margin-top:26px;">Add to Cart &nbsp;🛒</button>
+      <button class="btn-hero" onclick="addToCart('p2000');openCart();" style="margin-top:26px;">Agregar al Carrito &nbsp;🛒</button>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials" style="background:var(--dark);padding:90px 5%;text-align:center;">
-  <div class="section-eye" style="color:var(--gold);">Pet Parent Reviews</div>
-  <h2 class="section-title" style="color:var(--white);">WHAT THEY'RE SAYING</h2>
-  <p class="section-sub" style="color:rgba(255,255,255,.5);">Thousands of pets living happier, healthier lives.</p>
+  <div class="section-eye" style="color:var(--gold);">Reseñas de Dueños</div>
+  <h2 class="section-title" style="color:var(--white);">LO QUE DICEN</h2>
+  <p class="section-sub" style="color:rgba(255,255,255,.5);">Miles de mascotas viviendo vidas más felices y saludables.</p>
   <div class="stars-big">★★★★★ &nbsp; 4.9 / 5.0</div>
   <div class="tgrid">
-    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"My Golden Retriever has been so much calmer since we started Dr. Chis. His joints are more flexible and he's happier than ever."</p><div class="tcard-author">Sarah M.</div><div class="tcard-pet">Golden Retriever, 8 yrs · 2000MG</div></div>
-    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Our anxious rescue dog finally sleeps through the night. We tried everything — Dr. Chis is what actually worked."</p><div class="tcard-author">James R.</div><div class="tcard-pet">Mixed Breed, 4 yrs · 1000MG</div></div>
-    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"My senior Poodle has arthritis and this genuinely changed her quality of life. She's moving better and so much happier."</p><div class="tcard-author">Maria L.</div><div class="tcard-pet">Toy Poodle, 12 yrs · 500MG</div></div>
+    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Mi Golden Retriever ha estado mucho más tranquilo desde que empezamos con Dr. Chis. Sus articulaciones son más flexibles y está más feliz que nunca."</p><div class="tcard-author">Sarah M.</div><div class="tcard-pet">Golden Retriever, 8 años · 2000MG</div></div>
+    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Nuestro perro rescatado ansioso por fin duerme toda la noche. Probamos todo — Dr. Chis es lo que realmente funcionó."</p><div class="tcard-author">James R.</div><div class="tcard-pet">Mestizo, 4 años · 1000MG</div></div>
+    <div class="tcard reveal"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Mi Poodle mayor tiene artritis y esto genuinamente cambió su calidad de vida. Se mueve mejor y está mucho más feliz."</p><div class="tcard-author">Maria L.</div><div class="tcard-pet">Poodle Toy, 12 años · 500MG</div></div>
   </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" style="background:var(--cream);padding:90px 5%;">
   <div style="text-align:center;margin-bottom:48px;">
-    <div class="section-eye reveal">Have Questions?</div>
-    <h2 class="section-title reveal">FREQUENTLY ASKED QUESTIONS</h2>
+    <div class="section-eye reveal">¿Tienes Preguntas?</div>
+    <h2 class="section-title reveal">PREGUNTAS FRECUENTES</h2>
   </div>
   <div class="faq-wrap reveal">
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Is Dr. Chis CBD Oil safe for all dogs?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Yes. Dr. Chis CBD Oil is formulated specifically for pets. It is THC-free, non-psychoactive, and made with natural ingredients. We recommend consulting your vet before starting any supplement.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What's the correct dosage for my pet?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>We recommend 3–5 drops, 3 times a day, administered sublingually. Choose the strength by weight: 500MG for small breeds, 1000MG for medium breeds, 2000MG for large breeds.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>How long before I see results?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Results vary by pet. Many pet parents report improvements within 2–4 weeks of consistent use. For anxiety and stress, some pets respond within the first few days.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Is the product third-party tested?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Absolutely. Every batch undergoes rigorous third-party laboratory testing for purity, potency, and safety. Certificates of analysis are available upon request.</p></div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>How do I place an order?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Add your chosen product(s) to the cart and tap "Order via WhatsApp". You'll be connected directly with us to confirm your order and arrange payment and delivery.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>¿Es seguro el Aceite CBD Dr. Chis para todos los perros?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Sí. El Aceite CBD Dr. Chis está formulado específicamente para mascotas. Es libre de THC, no psicoactivo y elaborado con ingredientes naturales. Recomendamos consultar a tu veterinario antes de iniciar cualquier suplemento.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>¿Cuál es la dosis correcta para mi mascota?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Recomendamos 3–5 gotas, 3 veces al día, administradas de forma sublingual. Elige la concentración según el peso: 500MG para razas pequeñas, 1000MG para razas medianas, 2000MG para razas grandes.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>¿Cuánto tiempo tarda en hacer efecto?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Los resultados varían según la mascota. Muchos dueños reportan mejoras en 2–4 semanas de uso constante. Para ansiedad y estrés, algunas mascotas responden en los primeros días.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>¿El producto tiene pruebas de terceros?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Por supuesto. Cada lote pasa por rigurosas pruebas de laboratorio de terceros para pureza, potencia y seguridad. Los certificados de análisis están disponibles bajo solicitud.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>¿Cómo hago un pedido?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Agrega tu(s) producto(s) al carrito y toca "Pedir por WhatsApp". Te conectarás directamente con nosotros para confirmar tu pedido y coordinar pago y entrega.</p></div></div>
   </div>
 </section>
 
 <!-- FOOTER TRUST -->
 <div class="footer-trust">
-  <div class="ft"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div class="ft-txt"><strong>Fast Shipping</strong><span>Worldwide delivery</span></div></div>
-  <div class="ft"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div class="ft-txt"><strong>Money Back Guarantee</strong><span>30 days, no questions asked</span></div></div>
-  <div class="ft"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><div class="ft-txt"><strong>Quality Guaranteed</strong><span>Premium ingredients only</span></div></div>
-  <div class="ft"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><div class="ft-txt"><strong>Third Party Tested</strong><span>Certificate of analysis</span></div></div>
-  <div class="ft"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><div class="ft-txt"><strong>Made in USA 🇺🇸</strong><span>★★★★★ Premium standard</span></div></div>
+  <div class="ft"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div class="ft-txt"><strong>Envío Rápido</strong><span>Entrega a todo el mundo</span></div></div>
+  <div class="ft"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div class="ft-txt"><strong>Garantía de Devolución</strong><span>30 días, sin preguntas</span></div></div>
+  <div class="ft"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><div class="ft-txt"><strong>Calidad Garantizada</strong><span>Solo ingredientes premium</span></div></div>
+  <div class="ft"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg><div class="ft-txt"><strong>Probado por Terceros</strong><span>Certificado de análisis</span></div></div>
+  <div class="ft"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><div class="ft-txt"><strong>Hecho en USA 🇺🇸</strong><span>★★★★★ Estándar Premium</span></div></div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Dr. Chis · All rights reserved</p>
+  <p>© 2025 Dr. Chis · Todos los derechos reservados</p>
   <img class="logo-img" src="" alt="Dr. Chis" style="height:36px;width:auto;object-fit:contain;">
-  <p class="f-oral">Oral Use Only</p>
+  <p class="f-oral">Solo Uso Oral</p>
 </footer>
 
 </body>
